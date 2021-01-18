@@ -28,9 +28,10 @@ LTspiceシミュレーション済み。
 入手性の良い部品で構成した。
 
 [標準解像度版](schematic-1/ScreenShot01-Schematic-1024.png)
+
 <a href="schematic-1/ScreenShot01-Schematic-1024.png"> <img src="schematic-1/ScreenShot01-Schematic-1024.png" width="200"> </a>
 
-[高解像版](schematic-1/ScreenShot01-Schematic.png)
+[高解像度版](schematic-1/ScreenShot01-Schematic.png)
 
 
 
@@ -47,6 +48,7 @@ LTspiceシミュレーション済み。
 これらの特性曲線をArduinoでLCDディスプレイに表示する想定。
 
 [高解像度版](schematic-1/ScreenShot02-result.png)
+
 <a href="schematic-1/ScreenShot02-result.png"> <img src="schematic-1/ScreenShot02-result.png" width="100"> </a>
 
 
