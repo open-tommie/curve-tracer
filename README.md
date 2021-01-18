@@ -3,6 +3,7 @@
 ## Sammary (概要)
 
 カーブトレーサー回路をLTspiceでシミュレーションした。
+
 入手性の良い部品で構成した。
 
 Arduinoで制御、表示する想定。
@@ -13,6 +14,7 @@ Arduinoで制御、表示する想定。
 
 半導体カーブトレーサーは、ダイオード、トランジスタ、サイリスタなどの半導体素子の特性を測定するための機器。オシロスコープをベースに、電圧源、電流源を備えて被測定物（DUT）への印加をする。
 
+昔のカーブトレーサー
 <a href="Transistor_curve_tracer.jpg"> <img src="Transistor_curve_tracer.jpg" width="100"> </a>
 
 ## Status (状態)
@@ -23,19 +25,30 @@ LTspiceシミュレーション済み。
 
 ## Schematic (回路図)
 
-<a href="schematic-1/ScreenShot01-Schematic.png"> <img src="schematic-1/ScreenShot01-Schematic.png" width="200"> </a>
+入手性の良い部品で構成した。
+
+[標準解像度版](schematic-1/ScreenShot01-Schematic-1024.png)
+<a href="schematic-1/ScreenShot01-Schematic-1024.png"> <img src="schematic-1/ScreenShot01-Schematic-1024.png" width="200"> </a>
+
+[高解像版](schematic-1/ScreenShot01-Schematic.png)
+
+
 
 ## Simulation Result (シミュレーション結果)
 
-<a href="schematic-1/ScreenShot02-result.png"> <img src="schematic-1/ScreenShot02-result.png" width="200"> </a>
+<a href="schematic-1/ScreenShot03-result-1024.png"> <img src="schematic-1/ScreenShot03-result-1024.png" width="200"> </a>
 
-画像の上から
+画像で上から
 
 ・Vce-Ic曲線
 
 ・Vbe-Ic曲線
 
 これらの特性曲線をArduinoでLCDディスプレイに表示する想定。
+
+[高解像度版](schematic-1/ScreenShot02-result.png)
+<a href="schematic-1/ScreenShot02-result.png"> <img src="schematic-1/ScreenShot02-result.png" width="100"> </a>
+
 
 ## ファイル構成
 
@@ -45,7 +58,7 @@ LTspiceシミュレーション済み。
 |2|curve-tracer.plt| シミュレーション結果表示設定(LTspice用)|
 |3|toragi.lib| 2SC1815のモデルライブラリ。書籍「トランジスタ技術」に付属していたもの。シミュレーションに必要。(LTspice用)|
 |4|LMx58_LM2904.CIR|LM358Pのモデルライブラリ。シミュレーションに必要(LTspice用)|
-
+|5|ScreenShot*.png|スクリーンショット画像ファイル|
 ## To be improved (改善すべき点)
 
 ・あまり精度が良くないかも。（プロトタイプとしては十分と思われるが）
