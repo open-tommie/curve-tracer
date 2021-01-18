@@ -12,12 +12,13 @@ Arduinoで制御、表示する想定。
 [半導体カーブトレーサー](https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%B0%8E%E4%BD%93%E3%82%AB%E3%83%BC%E3%83%96%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B5%E3%83%BC)
 
 半導体カーブトレーサーは、ダイオード、トランジスタ、サイリスタなどの半導体素子の特性を測定するための機器。オシロスコープをベースに、電圧源、電流源を備えて被測定物（DUT）への印加をする。
-<a href="Transistor_curve_tracer.jpg"> <img src="Transistor_curve_tracer.jpg" width="100"> </a>
 
+<a href="Transistor_curve_tracer.jpg"> <img src="Transistor_curve_tracer.jpg" width="100"> </a>
 
 ## Status (状態)
 
 LTspiceシミュレーション済み。
+
 ブレッドボードで実装テストはまだしていない。
 
 ## Schematic (回路図)
@@ -29,7 +30,9 @@ LTspiceシミュレーション済み。
 <a href="schematic-1/ScreenShot02-result.png"> <img src="schematic-1/ScreenShot02-result.png" width="200"> </a>
 
 画像の上から
+
 ・Vce-Ic曲線
+
 ・Vbe-Ic曲線
 
 これらの特性曲線をArduinoでLCDディスプレイに表示する想定。
