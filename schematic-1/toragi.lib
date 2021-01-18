@@ -1,0 +1,88 @@
+******************************* Diode ********************************
+
+*****Default
+.MODEL DDEF D
+*$
+********** Small Signal Detector **********
+
+*****1S1588 (High Speed Switing,IFM=360mA,VR=30V)
+.MODEL DS1588 D (IS=4.4E-14 IKF=10m BV=30 RS=3.8 CJO=1p TT=1n)
+*$
+********** Zener Diode **********
+
+*****05AZ5.6 (VZ=5.6V,IZ=20mA,P=500mW)
+.MODEL DZ5_6 D (IS=1.1E-15 BV=5.13 RS=3 CJO=150p TT=1u)
+*$
+
+*****1GWJ42 (Schottky-Barrier Diode,IF(AV)=1A,VRRM=40V)
+.MODEL DGWJ42 D (IS=2E-8 IKF=0.15 BV=40 RS=0.06 CJO=150p TT=18n)
+*$
+
+************************* Bipolar Transister **************************
+
+*****Default
+
+.MODEL QNDEF NPN
+*$
+.MODEL QPDEF PNP
+*$
+
+*****2SA1015 (General Purpose,Complementary 2SC1815,VCEO=50V,IC=150mA,PC=400mW)
+.MODEL QA1015 PNP (IS=4E-14 BF=170 BR=10 VA=100 IK=0.22 RB=30 RC=1.4
++                  CJC=9.6p CJE=24p TF=0.63n TR=25n)
+*                 (RB=rbb'，CJE=2.5*CJC，TR=40*TF)
+*$
+
+*****2SB834 (Middle Power,Complementary 2SD880,VCEO=60V,IC=3A,PC=30W)
+.MODEL QB834 PNP (IS=1.4E-12 BF=110 BR=11 VA=50 IK=1 RB=1.4 RC=0.14
++                 CJC=360p CJE=900p TF=18n TR=720n)
+*                (RB=10*RC，CJE=2.5*CJC，TR=40*TF)
+*$
+
+*****2SC1815 (General Purpose,Complementary 2SA1015,VCEO=50V,IC=15OmA,PC=400mW)
+.MODEL QC1815 NPN (IS=4E-14 BF=170 BR=3.6 VA=100 IK=0.25 RB=50 RC=0.76
++                  CJC=4.8p CJE=12p TF=0.63n TR=25n)
+*                 (RB=rbb'，CJE=2.5*CJC，TR=40*TF)
+*$
+*****2SD880 (Middle Power,Complementary 2SB834,VCEO=60V,IC=3A,PC=30W)
+.MODEL QD880 NPN (IS=1.4E-12 BF=110 BR=5.8 VA=100 IK=1.8 RB=0.58 RC=0.058
++                 CJC=168p CJE=420p TF=53n TR=2.1u)
+*                (RB=10*RC，CJE=2.5*CJC，TR=40*TF)
+*$
+
+******************************** JFET *********************************
+
+*****Default
+.MODEL JNDEF NJF
+*$
+
+.MODEL JPDEF PJF
+*$
+
+*****2SK30ATM(Y)
+.MODEL JK30 NJF (BETA=1.1m VTO=-1.4 LAMBDA=1m CGD=9p CGS=9p RS=10 RD=10
++                BETATCE=-0.5 VTOTC=-2.5m)
+*$
+
+*****2SJ104(BL)
+.MODEL JJ104 PJF (BETA=51m VTO=-0.43 LAMBDA=4.1m CGD=90p CGS=200p RS=10 RD=10
++                 BETATCE=-0.5 VTOTC=-2.5m)
+*$
+
+************************ Operational Amplifier *************************
+
+*****Ideal OP Amp
+.SUBCKT IDOPA IN+ IN- OUT
+  E1 OUT 0 IN+ IN- 1E6 ;Gvo=1E6
+.ENDS
+*$
+*****10MHz OP AMP
+*                    +  - OUT
+.SUBCKT  OP_10MHz    1  2  5
+E1   3   0   1   2   100000
+R1   3   4           1.59K
+C1   4   0           1U
+E2   5   0   4   0   1
+.ENDS
+*$
+

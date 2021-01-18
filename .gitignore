@@ -1,0 +1,11 @@
+# for LTspice
+#    open-tommie(@tommie_nic)
+#
+
+# Temporary files
+*.log
+*.net
+*.raw
+*.fft
+
+#EOF

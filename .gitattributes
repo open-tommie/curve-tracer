@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
+# for LTspice
 * text=auto
+
+#
+#
+#*.asc text eol=crlf encoding=utf-8
+#    .ascをtextにすると文字化けするのでバイナリ扱いのままにしておく。
+#
+.asc bin
+
+.gitattributes text
+.gitignore text
+#EOF
