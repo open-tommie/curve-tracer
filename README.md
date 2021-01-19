@@ -55,8 +55,8 @@ LTspiceシミュレーション済み。
 ----|----|----|
 |1|curve-tracer.asc| カーブトレーサー回路図(LTspice用)|
 |2|curve-tracer.plt| シミュレーション結果表示設定(LTspice用)|
-|3|toragi.lib| 2SC1815のモデルライブラリ。(LTspice用) <br> シミュレーションに必要。 <br> 書籍「トランジスタ技術」に付属していたもの。|
-|4|LMx58_LM2904.CIR|LM358Pのモデルライブラリ。 <br> シミュレーションに必要(LTspice用)　<br> <br> TEXAS INSTRUMENTS社のサイトから入手  https://www.tij.co.jp/product/jp/LM358|
+|3|toragi.lib| 2SC1815を含むモデルライブラリ。(LTspice用) <br> シミュレーションに必要。 <br> 書籍「トランジスタ技術」に付属していたもの。|
+|4|LMx58_LM2904.CIR|LM358Pを含むモデルライブラリ。 <br> シミュレーションに必要(LTspice用)　<br> <br> TEXAS INSTRUMENTS社のサイトから入手  https://www.tij.co.jp/product/jp/LM358|
 |5|ScreenShot*.png|スクリーンショット画像ファイル|
 ## To be improved (改善すべき点)
 
