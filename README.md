@@ -73,5 +73,3 @@ LTspiceシミュレーション済み。
 - [Analog Discovery 2™ Curve Tracer](https://knack.supply/product/ad2ct/)
     - 回路図
 [ad2-curve-tracer-hw](https://github.com/knack-supply/ad2-curve-tracer-hw)
-
----
